@@ -1,0 +1,137 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #ffeb3b, #ff4081);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+header {
+    background: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 70px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    animation: slideDown 1.5s ease-out;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #ff4081;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+p {
+    font-size: 1.3rem;
+    color: #555;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.details, .rsvp, .photo-frame {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    margin: 40px 0;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.details:hover, .rsvp:hover, .photo-frame:hover {
+    transform: scale(1.02);
+}
+
+.details h2, .rsvp h2, .photo-frame h2 {
+    color: #ff4081;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.photo-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.photo {
+    border: 10px solid #ff4081;
+    border-radius: 20px;
+    width: 350px;
+    height: 450px;
+    object-fit: cover;
+    animation: pulse 3s infinite;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 2px solid #ff4081;
+    font-size: 1rem;
+}
+
+.btn-submit {
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    margin-top: 20px;
+}
+
+.btn-submit:hover {
+    background-color: #ff1744;
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+footer {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 30px;
+    color: #333;
+    font-size: 1.2rem;
+}
